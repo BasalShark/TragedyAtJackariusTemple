@@ -48,30 +48,6 @@ CCTV_Camera_ID:
 </footer>
 </body>
 <script>
-var cam = document.getElementById("camera").value;
-var i;
-function changeCamera(){
-cam = document.getElementById("camera").value;
-
-document.getElementById("noCam").style.display="none";
-i=0;
-for (i = 0; i < 6; i++) {
-  document.getElementsByClassName("pic")[i].style.display="none";
-}
-
-if (cam == "5.14.20.18.1.14.3.5.0.8.1.12.12") {
-document.getElementById("entrance").style.display="block";}
-else if (cam == "16.1.18.12.15.21.18") {
-document.getElementById("parlour").style.display="block";}
-else if (cam == "4.18.1.23.9.14.7.0.18.15.15.13") {
-document.getElementById("drawing").style.display="block";}
-else if (cam == "7.1.13.5.19.0.18.15.15.13") {
-document.getElementById("games").style.display="block";}
-else if (cam == "4.9.14.9.14.7.0.1.18.5.1") {
-document.getElementById("dining").style.display="block";}
-else {
-document.getElementById("static").style.display="block";
-document.getElementById("noCam").style.display="block";}
-}
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('q e=2.a("n").o;q i;F E(){e=2.a("n").o;2.a("r").b.c="p";i=0;w(i=0;i<6;i++){2.H("A")[i].b.c="p"}k(e=="5.j.v.f.1.j.3.5.0.8.1.l.l"){2.a("x").b.c="d"}g k(e=="y.1.f.l.h.z.f"){2.a("B").b.c="d"}g k(e=="4.f.1.C.9.j.7.0.f.h.h.m"){2.a("D").b.c="d"}g k(e=="7.1.m.5.s.0.f.h.h.m"){2.a("G").b.c="d"}g k(e=="4.9.j.9.j.7.0.1.f.5.1"){2.a("u").b.c="d"}g{2.a("t").b.c="d";2.a("r").b.c="d"}}',44,44,'||document||||||||getElementById|style|display|block|cam|18|else|15||14|if|12|13|camera|value|none|var|noCam|19|static|dining|20|for|entrance|16|21|pic|parlour|23|drawing|changeCamera|function|games|getElementsByClassName'.split('|'),0,{}))
 </script>
 </html>
