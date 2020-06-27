@@ -1,0 +1,217 @@
+<DOCTYPE! html>
+<head>
+<title>Case Records: Suspects</title>
+<style>
+*{margin:0px;padding:0px;}
+body{background-color: black;}
+nav ul, .factfile{list-style-type:none; margin-left:5%;}
+nav ul li{border-style:solid; padding:1%; display:block; float:left; width: 9.5%; border-color: darkgray; background-color:beige; font-size:1.2vw; font-family: Calibri;}
+h1, h2, nav ul li, footer{text-align:center;}
+nav ul li:hover{background-color:gray;}
+h1{margin:3%; font-family: Consolas; background-color:lightgray; margin-left:32.5%;margin-right:32.5%; padding: 10px; font-size: 3vw;}
+main{background-color:orange; display:inline-block; margin-left:25%; margin-right:25%; border-style:solid; border-color:white; border-radius: 10px; margin-top:2.5%}
+.suspect{background-color: #6cced4; display:inline-block; margin: 2.5%; border-style:solid; border-color:black; border-radius: 10px;}
+h2{margin:10px; text-decoration:underline; font-size: 2vw;}
+.factfile, .pic, .info {background-color: white; border-style: solid; border-width: 0px; border-radius: 10px; padding:5px; display:inline-block; font-family: Consolas;}
+.factfile{float:left; margin-top: 9%; margin-bottom: 11%; width: 44%; padding:2%; margin-left:2%; font-size: 1.2vw;}
+.pic{float:right; height:auto; width:40%; margin-right:2%;}
+.info{margin:10px; font-family: Agency FB; font-size: 1.6vw;}
+footer{font-family:Calibri; margin-top:10px; margin-bottom: 2%; color: white; font-size: 1vw;}
+</style>
+</head>
+<body>
+<header>
+<h1>Case Records: Suspects</h1>
+<nav>
+<ul>
+<li onclick = showRev()>Rev. Erskine</li>
+<li onclick = showProf()>Prof. Jones</li>
+<li onclick = showDoc()>Dr. Duncan</li>
+<li onclick = showColonel()>Colonel Holman</li>
+<li onclick = showSir()>Sir Jackarius</li>
+<li onclick = showSenor()>Señor Geldart</li>
+<li onclick = showMr()>Mr Moore</li>
+<li onclick = showLord()>Lord Mirza</li>
+</ul>
+</nav>
+</header>
+
+<main>
+<div id = "erskine" class = "suspect" style="display:block">
+<h2>Reverend Erskine</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Reverend Callum Erskine</li><br>
+<li>D.O.B: 08/03/1961</li><br>
+<li>Nationality: Italian</li><br>
+<li>Languages: English, Italian</li>
+</ul>
+<img src="Images/Erskine.jpg" class = "pic">
+<div class = "info">
+Having graduated from the Church of England, Rev. Erskine has devoted his life to healing those plaged with life-threatening illnesses, or as he considers it, "those with a wee problem". A man of habit, he attends church on a Friday, Wednesday, Monday, Thursday, Sunday and Tuesday from 11:30 am to 2:45 pm without fail.<br><br>
+Born in Italy and raised in the Vatican, Rev. Erskine enjoys taking time out of his busy schedule to fly to all the edges of the world, preaching about the wonders of Jesus, God and the Flat Earth theory. Despite a dwindling fortune, Rev. Erskine believes that God will one day bless him for spreading His love. <br><br>
+When not in church, Rev. Erskine can be found wandering the forests near his current home in Dorset, teaching the squirrels to turn water to wine, or spending 40 days and 40 nights relaxing on the beach. <br><br>
+A decade ago, Rev. Erskine cured Sir Jackarius' wife of a "malignant malady", and since then has enjoyed the hospitality of the Wylies, attending many of their festivals and parties (though he strictly remains sober). He does, however, have a somewhat irrational phobia of spoons, originating from what he describes as an 'event only fit for the most harrowing horror film', and will stop at nothing to avoid contact with them. 
+</div>
+</div>
+<div id = "jones" class = "suspect" style="display:none">
+<h2>Professor Jones</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Professor George Jones</li><br>
+<li>D.O.B: 10/10/1993</li><br>
+<li>Nationality: British</li><br>
+<li>Languages: English</li>
+</ul>
+<img src="Images/Temp.png" class = "pic">
+<div class = "info">
+Obsessed with birch, oak and elm, Professor George Jones is a world renowned horticulturalist and tree expert born in Woodstock. At age 2, he was able to accurately identify over 2,000 species of tree through smell alone, and began working at the Botanic Gardens in Edinburgh as a tour guide aged 5. While his unrivalled knowledge of trees far outweighed his limited vocabulary, visitors would come from worldwide to hear a talk from the "Tree Boy".<br><br>
+His talents soon earned him a place at Stanford University, where he became the world's first professor of wood science aged 16. His classes are very unusual, with students asked to bond with trees or oil their wood. As a result, he is sought after highly by both the USA and the Russian Federation in order to procure cutting-edge research into eucalyptus tree growth, and so now keeps a low-profile back home in the United Kingdom. <br><br>
+His relationship with the Wylies is somewhat unusual: after spying a rare bonsai tree growing in one of the Wylies' gardens, he refused to leave their garden until he was allowed to visit the tree everyday to nourish it. Despite the Wylies' initial reservations, Professor Jones has transformed their average garden into a treasured utopia of floral love, with the bonsai tree, now named Crumpets, taking its rightful place as the guardian of the garden. 
+</div>
+</div>
+<div id = "duncan" class = "suspect" style="display:none">
+<h2>Doctor Duncan</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Doctor Struan Duncan</li><br>
+<li>D.O.B: 29/01/1972</li><br>
+<li>Nationality: Turkish</li><br>
+<li>Languages: English, Arabic</li>
+</ul>
+<img src="Images/Duncan.jpg" class = "pic">
+<div class = "info">
+No stranger to crazy cures and tribal treatments, Dr. Duncan has studied traditional medicinal techniques from around the globe. After a sickness plagued his home town of Istanbul, Dr. Duncan vouched to try to put an end to a virus he had read about in a book - smallpox. He was soon after forced to give up on his life's dream after discovering that smallpox was already eradicated. He then made a new goal to meet Edward Jenner (the man who invented the smallpox vaccine) and prove that he knew more cures than he did. Another tragedy struck Dr. Duncan when he realised that Jenner was dead. <br><br>
+Eager to get away from his failures, he emigrated to the UK, where he called upon his cultural heratige to infuse standard medical practices with remedies from Eastern Europe. In 2017, he won the Nobel Prize for developments in microbiology, after developing a micro-vacuum for the lungs. The fame quickly became irritating, and he quit his job soon after, to run an apothecary, and becoming a mental-wellness yoga instructor on the side. He met his wife, Samantha, at his yoga clinic, and they proceeded to get married 5 years after meeting. <br><br>
+His new job also led him to meet Sir Jackarius, who had come to his yoga clinic to lessen what his friends considered his "superiority complex". The two quickly became compatriots, and now Dr. Duncan also sells him apothecary pills and medicines from his shop.
+</div>
+</div>
+<div id = "holman" class = "suspect" style="display:none">
+<h2>Colonel Holman</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Colonel Fraser Holman</li><br>
+<li>D.O.B: 30/12/1947</li><br>
+<li>Nationality: Tobagonian</li><br>
+<li>Languages: English, Spanish, BSL</li>
+</ul>
+<img src="Images/Temp.png" class = "pic">
+<div class = "info">
+Colonel Holman, son of General Holman, son of Admiral Holman, was born in the Port of Spain. His early life consisted mainly of learning trades from his father, becoming skilled in woodwork, metalwork, plasticwork, woolwork, leatherwork and fishing. <br><br>
+After his parents died, Colonel Holman moved to the USA where he was quickly called into service to fight in the Vietnam War from 1974 - 1975, where he was given the rank of Colonel. His skills in survival led him to save many injured soldiers, and so was awarded a Medal of Honor upon his return to the USA. However, a year of fighting seriously damaged his ability to hear, and so was relocated to the UK, where after a few years, Colonel Holman learned sign language, lip-reading and had vocal training, so that he can still talk to others.<br><br>
+It was at this time where he met his wife, Ermintrude, whom he proceeded to have 3 children with. His children, now all in their 20s and 30s, have left home to live in other parts of the UK. In 2011, Colonel Holman lost his wife due to old age, and so now lives on his own.<br><br> 
+He now lives across the street from Sir Jackarius, and his tales of his adventures have become a must-hear event for the whole town on the first of each month at 7 pm. He is also famed for his re-enactments of his adventures, putting on wigs and amusing costumes to raise money for retired war veterans. Sir Jackarius' children are regular attendees, and Colonel Holman has become a sort of grandfather-like figure to them, and so he is now considered part of the family.
+</div>
+</div>
+<div id = "jackarius" class = "suspect" style="display:none">
+<h2>Sir Jackarius</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Sir Jackarius Wylie</li><br>
+<li>D.O.B: 20/07/1988</li><br>
+<li>Nationality: British</li><br>
+<li>Languages: English, Ancient Greek</li>
+</ul>
+<img src="Images/Temp.png" class = "pic">
+<div class = "info">
+A wealthy landowner, Sir Jackarius inherited a large fortune from his parents on their death, whose ancestors owned several slave colonies in the Dominican Republic. Later in the family, one generation of the Wylie family set up their own company (the Wylie Company), which produced WCs. The high demand for these bolstered the Wylies wealth, to the point where they became one of the richest families in the town.<br><br>
+Sir Jackarius met his wife, Sharon Coyote, while at the British Organisation for the Representation of Independent National Giants. Both Sir Jackarius and Sharon, as a result of vast wealth, have an unacknowledged condition whereby they believe themselves superior to everyone else in the world. As a result, they decided to double-barrel their surname upon marriage, until a friend pointed out that their surname became Wylie-Coyote. As such, they took the unorthodox, but still equal option of having their own legal surnames, but no longer consider themselves to have surnames, preferring to be referred to by just Sir Jackarius and Dame Sharonius.<br><br>
+The family, legally still the Wylies, have connections with almost everyone in the town, and have very few quarrels with anyone but themselves. Their succulent festivals are enjoyed by so many people that the town decided to donate money to erect a temple in their honour, themed around the Greeks, Sir Jackarius' favourite civilisation.
+</div>
+</div>
+<div id = "geldart" class = "suspect" style="display:none">
+<h2>Señor Geldart</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Señor Dylan Geldart</li><br>
+<li>D.O.B: 26/08/1979</li><br>
+<li>Nationality: Portuguese</li><br>
+<li>Languages: English, Portuguese</li>
+</ul>
+<img src="Images/Geldart.jpg" class = "pic">
+<div class = "info">
+Presenter of cookery show, "Dylan's Fillings", Señor Geldrat rose to prominence in Lisbon, where he competed on "<em>Tem gosto de cocô de pinguim?</em>", the Portuguese version of Masterchef. His finale dish, titled "O mush!", featured delicacies such as squirrel brains, turkey testicles and cow udders, ingredients which he considers "made by nature". Soon after landing his own TV show, he took part in a reality show, documenting him staying alive in the Choupal Forest for a week.<br><br>
+Señor Geldrat was awarded many awards for his services to the King, including OPE, MPE, CPE, Honours, PEM and more. The list is so extensive, that Señor Geldrat is reputed to have jokingly commented, "You wish to write down my awards, no? Do you have a stack of paper?". Tragedy struck Señor Geldrat when Queen Elizabeth II, who was visiting, was disgusted to discover spit bug faeces on one of her kidney beans. [The newspaper report is titled "Queen's beans seem unclean!"]. Señor Geldrat, unfortunately, failed to remedy the situation by merely informing her that it was in fact bombadier beetle excrement instead. <br><br>
+Exiled from Portugal for disgracing the Royals, Señor Geldrat moved to where he believed no-one would expect: the UK, under the pseudonym Señor Geldart. The story never reached most of the public outside of Portugal, but Sir Jackarius (who had heard it from Rev. Erskine), employed him as his chef with the promise that he could review all ingredients beforehand. 
+</div>
+</div>
+<div id = "moore" class = "suspect" style="display:none">
+<h2>Mr Moore</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Mr Harry Moore</li><br>
+<li>D.O.B: ?</li><br>
+<li>Nationality: ?</li><br>
+<li>Languages: English, ?</li>
+</ul>
+<img src="Images/Temp.png" class = "pic">
+<div class = "info">
+It has not been diagnosed, but doctors think that Mr Moore has a neurological condition whereby he believes that he is the god of cats. According to Mr Moore, a floating cat head told him that he must "save the cats from annihilation". So far he has adopted 54 cats, and has employed 10 people to help him look after these creatures. <br><br>
+Mr Moore has said that while he would like to get married, his cats do not want him to, and will do whatever they can do to stop him doing so. Normally, their presence is enough. Other unique qualities include eating cat food, occasionally meowing, and having an intense dislike of dogs and wolves. Little else is known about him, and not even Sir Jackarius can remember how the two met, only that he provides a constant source of amusement at his events.
+</div>
+</div>
+<div id = "mirza" class = "suspect" style="display:none">
+<h2>Lord Mirza</h2>
+<br>
+<ul class = "factfile">
+<li>Name: Lord Samuel Mirza</li><br>
+<li>D.O.B: 10/05/2000</li><br>
+<li>Nationality: British</li><br>
+<li>Languages: English, Klingon</li>
+</ul>
+<img src="Images/Temp.png" class = "pic">
+<div class = "info">
+A friend of Sir Jackarius' from private school, Lord Mirza makes a living creating YouTube videos of his life. Due to his upperclass upbringing, people send him commonplace items for him to try and use. Highlights of his videos include him tying to use a vacuum cleaner, a cheese grater and sellotape, all of which end comically. His videos, which attract hundreds of new watchers daily, have accumulated over 7 billion likes. Also a huge fan of Star Trek, he has memorised all the entire script and produces videos on how to talk Klingon.<br><br>
+Lord Mirza graduated with a degree in pharmacaeuticals, and met Dr. Duncan through work experience. However, he couldn't be bothered enough to get a job, and talking to other people was beneath him, so he now lives life as a contented batchelor. His estate, the second largest residence in the town, has a museum, Olympic sized pool and a gym, though they are rarely visited except by the housekeeping staff.<br><br>
+His parents, who still live with him, regularly attend church with Rev. Erskine and ensure that Lord Mirza attends Sunday School from 1:30 to 3:30 weekly, the sole feature preventing him from having a perfect life. Lord Mirza's Christian childhood has imparted some morality into him, and so he is a regular donater to multiple charities. He does, however, look after his garden himself, much to the annoyance of Professor Jones, and spends many an hour planting new trees or feeding his many tropical fish. 
+</div>
+</div>
+</main>
+<footer>
+<p>These characters are purely a work of fiction. Any resemblences to non-fictional people are purely coincidental.</p>
+</footer>
+</body>
+<script>
+var current = "erskine";
+function showRev(){
+document.getElementById(current).style.display="none";
+document.getElementById("erskine").style.display="block";
+current = "erskine"
+}
+function showProf(){
+document.getElementById(current).style.display="none";
+document.getElementById("jones").style.display="block";
+current = "jones"
+}
+function showDoc(){
+document.getElementById(current).style.display="none";
+document.getElementById("duncan").style.display="block";
+current = "duncan"
+}
+function showColonel(){
+document.getElementById(current).style.display="none";
+document.getElementById("holman").style.display="block";
+current = "holman"
+}
+function showSir(){
+document.getElementById(current).style.display="none";
+document.getElementById("jackarius").style.display="block";
+current = "jackarius"
+}
+function showSenor(){
+document.getElementById(current).style.display="none";
+document.getElementById("geldart").style.display="block";
+current = "geldart"
+}
+function showMr(){
+document.getElementById(current).style.display="none";
+document.getElementById("moore").style.display="block";
+current = "moore"
+}
+function showLord(){
+document.getElementById(current).style.display="none";
+document.getElementById("mirza").style.display="block";
+current = "mirza"
+}
+</script>
+</html>
