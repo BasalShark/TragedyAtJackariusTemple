@@ -1,0 +1,77 @@
+<DOCTYPE! html>
+<head>
+<title>CCTV Monitor</title>
+<style>
+*{margin:0px;padding:0px; color: #29cc29;}
+body{background-color: black;}
+.factfile{list-style-type:none; margin-left:5%;}
+h1, h2, footer, form{text-align:center;}
+form{font-family:Consolas; font-size:1.6vw;}
+h1{margin:3%; font-family: Consolas; border-style: solid; border-color:#29cc29; margin-left:32.5%;margin-right:32.5%; padding: 10px; font-size: 3vw;}
+main{background-color:black; display:inline-block; margin-left:5%; margin-right:5%; border-style:solid; border-color:#29cc29; margin-top:2.5%; width:90%;}
+h2{margin:10px; text-decoration:underline; font-size: 2vw;}
+.pic{padding:5px; display:inline-block; font-family: Consolas; height:auto; width:99%;}
+footer{font-family:Calibri; margin-top:10px; margin-bottom: 2%; color: white; font-size: 1vw;}
+input{color:black; font-size: 1.3vw; width:auto; padding-left:5px;}
+#left{float: left; margin-left:25%;}
+form p{background-color:white; float:right; width: 10vw; color: black; margin-right: 25%;}
+form p:hover{background-color:darkgray;}
+#noCam{text-align:center; color:orange;}
+
+</style>
+</head>
+<body>
+<header>
+<h1>CCTV Monitor</h1>
+<form>
+<div id = "left">
+CCTV_Camera_ID:
+<input type = "text" id = "camera" size = "30" maxlength = "50" autocomplete = "off" value = "4.18.1.23.9.14.7.0.18.15.15.13">
+</div>
+<p onclick = changeCamera()>Submit</p>
+</form>
+</header>
+
+<br><br><br>
+<p id = "noCam" style = "display:none">CCTV camera does not exist.</p>
+
+<main>
+<img src="Images/Drawing.jpg"  id = "drawing" class = "pic" style="display:block">
+<img src="Images/Dining.jpg"  id = "dining" class = "pic" style="display:none">
+<img src="Images/Parlour.jpg"  id = "parlour" class = "pic" style="display:none">
+<img src="Images/EntranceHall.png"  id = "entrance" class = "pic" style="display:none; margin-left:20vw; width: 55%">
+<img src="Images/Games.jpg"  id = "games" class = "pic" style="display:none">
+<img src="Images/Static.png"  id = "static" class = "pic" style="display:none">
+
+</main>
+<footer>
+</footer>
+</body>
+<script>
+var cam = document.getElementById("camera").value;
+var i;
+function changeCamera(){
+cam = document.getElementById("camera").value;
+
+document.getElementById("noCam").style.display="none";
+i=0;
+for (i = 0; i < 6; i++) {
+  document.getElementsByClassName("pic")[i].style.display="none";
+}
+
+if (cam == "5.14.20.18.1.14.3.5.0.8.1.12.12") {
+document.getElementById("entrance").style.display="block";}
+else if (cam == "16.1.18.12.15.21.18") {
+document.getElementById("parlour").style.display="block";}
+else if (cam == "4.18.1.23.9.14.7.0.18.15.15.13") {
+document.getElementById("drawing").style.display="block";}
+else if (cam == "7.1.13.5.19.0.18.15.15.13") {
+document.getElementById("games").style.display="block";}
+else if (cam == "4.9.14.9.14.7.0.1.18.5.1") {
+document.getElementById("dining").style.display="block";}
+else {
+document.getElementById("static").style.display="block";
+document.getElementById("noCam").style.display="block";}
+}
+</script>
+</html>
